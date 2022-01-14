@@ -1,0 +1,102 @@
+:root {
+  --bg-dark: #333;
+  --secondary: #103063;
+}
+
+body {
+  font-family: "PT Sans", sans-serif !important;
+}
+/* Navbar */
+.navbar {
+  padding-right: 0;
+  padding-left: 0;
+  height: 40px;
+  background-color: var(--bg-dark) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #eee;
+}
+
+.navbar-nav > .nav-item {
+  width: 100px;
+  text-align: center;
+}
+
+/* Showcase Section */
+#showcase {
+  background: url(img/showcase.jpeg) no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+  color: #fff;
+  padding-top: 50px;
+  font-weight: bold !important;
+}
+
+#showcase h1 {
+  font-size: 4em !important;
+  margin-top: 20vh;
+}
+
+#showcase h2 {
+  font-size: 2em !important;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  max-width: 1180px !important;
+}
+
+.container {
+  max-width: 1180px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.section-head {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.section h3 {
+  font-size: 2rem;
+}
+
+.lead {
+  margin: 1em 0;
+  font-size: 1.3rem;
+}
+
+h3 {
+  margin: 1em 0;
+}
+
+p {
+}
+
+.fas {
+  font-weight: 900vh;
+}
+
+.btn {
+  border-radius: 0.3rem !important;
+  padding: 1rem;
+  color: #fff;
+  display: inline-block;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.btn-secondary {
+  background: var(--secondary);
+}
+
+section#entertainment {
+  background: url(img/section-bg.jpeg) no-repeat bottom/cover;
+  padding: 10rem 0;
+}
