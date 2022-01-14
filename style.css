@@ -6,6 +6,14 @@
 body {
   font-family: "PT Sans", sans-serif !important;
 }
+
+h3 {
+  margin: 1em 0;
+}
+
+a {
+  text-decoration: none !important;
+}
 /* Navbar */
 .navbar {
   padding-right: 0;
@@ -70,13 +78,6 @@ body {
   font-size: 1.3rem;
 }
 
-h3 {
-  margin: 1em 0;
-}
-
-p {
-}
-
 .fas {
   font-weight: 900vh;
 }
@@ -99,4 +100,19 @@ p {
 section#entertainment {
   background: url(img/section-bg.jpeg) no-repeat bottom/cover;
   padding: 10rem 0;
+}
+
+.gift-cards {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+}
+
+.gift-cards img {
+  width: 100%;
+}
+
+.text-secondary {
+  color: var(--secondary-color) !important;
 }
