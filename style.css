@@ -1,6 +1,11 @@
 :root {
   --bg-dark: #333;
+  --bg-dark-secondary: #252529;
   --secondary: #103063;
+  --secondary-hover: #143f85;
+  --primary-color: #b90415;
+  --primary-color-hover: #d3071b;
+  --light-color: #f4f4f4;
 }
 
 body {
@@ -14,16 +19,33 @@ h3 {
 a {
   text-decoration: none !important;
 }
+
+li {
+  list-style: none;
+}
+
+a,
+#showcase,
+.footer-cols a,
+.bg-dark,
+.bg-dark-secondary,
+.navbar-dark .navbar-nav .nav-link,
+.btn {
+  color: var(--light-color) !important;
+}
+
+.bg-dark {
+  background: var(--bg-dark) !important;
+}
+
+.bg-dark-secondary {
+  background: var(--bg-dark-secondary) !important;
+}
 /* Navbar */
 .navbar {
   padding-right: 0;
   padding-left: 0;
   height: 40px;
-  background-color: var(--bg-dark) !important;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: #eee;
 }
 
 .navbar-nav > .nav-item {
@@ -38,7 +60,6 @@ a {
   height: 100vh;
   position: relative;
   overflow-y: hidden;
-  color: #fff;
   padding-top: 50px;
   font-weight: bold !important;
 }
@@ -85,16 +106,29 @@ a {
 .btn {
   border-radius: 0.3rem !important;
   padding: 1rem;
-  color: #fff;
   display: inline-block;
+  border: none !important;
+  border-radius: 0 !important;
 }
 
-.section {
-  padding: 2rem 0;
+.btn-primary {
+  background: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: var(--primary-color-hover);
 }
 
 .btn-secondary {
   background: var(--secondary);
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-hover);
+}
+
+.section {
+  padding: 2rem 0;
 }
 
 section#entertainment {
@@ -115,4 +149,27 @@ section#entertainment {
 
 .text-secondary {
   color: var(--secondary-color) !important;
+}
+
+/* Footer */
+
+.footer-cols {
+  font-size: 14px;
+  padding: 2rem;
+  text-align: left !important;
+}
+
+.footer-cols a {
+  text-decoration: none;
+}
+
+footer .footer-cols ul li:first-child {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: #444 solid 1px;
+  margin-bottom: 1rem;
+}
+
+.footer-bottom {
+  padding: 15px;
 }
